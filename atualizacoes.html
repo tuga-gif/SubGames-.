@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubGames - Atualizações</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icon/Fj.jpg" type="image/jpeg">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a.active, nav ul li a:hover {
+      color: #1db954;
+    }
+
+    .update-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .update-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .update {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .update:hover {
+      transform: scale(1.02);
+      border-color: #1db954;
+    }
+
+    .update h3 {
+      margin-top: 0;
+      color: #1db954;
+    }
+
+    .update p {
+      margin: 10px 0;
+      color: #b0b0b0;
+    }
+
+    .update span {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #757575;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #757575;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .rotate-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #1db954;
+      color: white;
+      font-size: 24px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.4s ease-in-out, background-color 0.3s;
+    }
+
+    .rotate-button:hover {
+      transform: rotate(360deg);
+      background-color: #14833b;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/sub games.jpg" alt="Logo SubGames">
+    </div>
+    <nav>
+      <ul>
+        <li> <li><a href="atualizacoes.html">Atualizações</a></li>
+        <li><a href="catalogo-jogos-ft.html">Catalogo</a></li>
+        <li><a href="codigos.html">Codigos</a></li>
+        <li><a href="jogos.html">Jogos</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+      </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="update-section">
+    <h2>Últimas Atualizações</h2>
+    <div class="update-container">
+      <div class="update">
+        <h3>Versão 1.3 - Novos Recursos e Páginas Atualizadas <span style="color: #ff9900;">[Novo]</span></h3>
+        <p>Adicionamos novas páginas e melhoramos o design do site. No Patch 1.4, novos jogos serão incluídos! No patch 1.3 tivemos a adição de 2 novos codigos para jogos do roblox e 4 novos jogos disponiveis.</p>
+        <span>Data de lançamento: 15/12/2024</span>
+      </div>
+      <div class="update">
+        <h3>Versão 1.2 - Novos Recursos</h3>
+        <p>Adicionamos novas funcionalidades no sistema, melhorias no sistema de recomendação e novos filtros de pesquisa. Também lançamos a versão mobile do site. Jogos da Steam grátis incluídos!</p>
+        <span>Data de lançamento: 11/12/2024</span>
+      </div>
+      <div class="update">
+        <h3>Versão 1.1 - Correções de Bugs</h3>
+        <p>Corrigimos alguns problemas de desempenho e melhoramos a navegação na plataforma. Agora está mais rápido e estável.</p>
+        <span>Data de lançamento: 05/12/2024</span>
+      </div>
+      <div class="update">
+        <h3>Versão 1.0 - Lançamento Inicial</h3>
+        <p>SubGames é oficialmente lançado com uma grande biblioteca de jogos do Roblox, possibilidade de publicar seus próprios jogos e mais!</p>
+        <span>Data de lançamento: 01/12/2024</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 SubGames. Todos os direitos reservados.</p>
+  </footer>
+
+  <a href="menu.html" class="rotate-button">Menu</a>
+</body>
+</html>

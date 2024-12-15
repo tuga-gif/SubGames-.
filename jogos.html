@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Jogo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            outline: none;
+        }
+        .search-container input:focus {
+            border-color: #007BFF;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .game-box {
+            width: 280px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .game-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .game-box h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #333;
+        }
+        .game-box p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .game-box button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .game-box button:hover {
+            background-color: #0056b3;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button-container button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="window.location.href='ajuda.html'">Ajuda</button>
+        <button onclick="window.location.href='Menu.html'">Voltar ao Menu</button>
+    </div>
+</div>
+    <div class="container">
+        <h1>Informações do Jogo</h1>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Pesquisar por nome do jogo...">
+        </div>
+
+        <div class="game-container" id="gameContainer">
+            <!-- Jogo 1 -->
+            <div class="game-box" data-title="Hidden Deep">
+                <img src="imagens jogos catalogo/hidden g.jpg" alt="Imagem do Jogo 1">
+                <h3>Hidden Deep</h3>
+                <p>Hidden Deep é um thriller de ficção científica de ação e exploração em 2D ambientado em uma instalação de mineração e pesquisa — mais de 1,6 km sob o fundo do oceano.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/Hidden Deep v0.95.43.2.zip'">Baixar Hidden Deep</button>
+            </div>
+
+            <!-- Jogo 2 -->
+            <div class="game-box" data-title="World Box">
+                <img src="imagens jogos catalogo/world box.png" alt="Imagem do Jogo 2">
+                <h3>World Box</h3>
+                <p>WorldBox é um simulador sandbox. Cria o teu próprio mundo ou destrói-o usando diferentes poderes. Vê civilizações crescerem, formarem reinos, colonizar novas terras e navegar até continentes distantes.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/WorldBox_SubGames.zip'">Baixar World Box</button>
+            </div>
+
+            <!-- Jogo 3 -->
+            <div class="game-box" data-title="Lethal Company">
+                <img src="img/Lethal-Company-1-e1699976954933.webp" alt="Imagem do Jogo 3">
+                <h3>Lethal Company</h3>
+                <p>Lethal company é um jogo multiplayer de terror cooperativo onde os jogadores devem coletar sucata em luas hostis para alcançar uma meta de lucro maior.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/jogo3.zip'">Baixar Lethal Company</button>
+            </div>
+
+            <!-- Jogo 4 -->
+            <div class="game-box" data-title="Laptop Tycoon">
+                <img src="imagens jogos catalogo/laptop tycoon 2.jpg" alt="Imagem do Jogo 4">
+                <h3>Laptop Tycoon</h3>
+                <p>Bem-vindo ao Laptop Tycoon! Compita com os gigantes da tecnologia! Mostre suas habilidades em gestão de negócios e comece sua própria empresa de laptops.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/Laptop Tycoon.zip'">Baixar Laptop Tycoon</button>
+            </div>
+
+            <!-- Jogo 5 -->
+            <div class="game-box" data-title="Mad Games">
+                <img src="imagens jogos catalogo/mad games.jpg" alt="Imagem do Jogo 5">
+                <h3>Mad Games Tycoon</h3>
+                <p>Mad Games Tycoon 2 simula como é ter um estúdio de games. Você gerencia a estrutura e equipe de uma desenvolvedora de jogos, desde a garagem até grandes impérios.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/Mad Games Tycoon 2.zip'">Baixar Mad Games Tycoon</button>
+            </div>
+
+            <!-- Jogo 6 -->
+            <div class="game-box" data-title="Barotrauma">
+                <img src="img/bara.jpeg" alt="Imagem do Jogo 6">
+                <h3>Barotrauma</h3>
+                <p>Barotrauma é um simulador cooperativo de terror e sobrevivência em um submarino 2D. É um jogo de ficção científica que combina física ragdoll e monstros alienígenas submarinos.</p>
+                <p>Créditos: SubGames</p>
+                <button onclick="window.location.href='uploads/Barotrauma.zip'">Baixar Barotrauma</button>
+            </div>
+        </div>
+
+    <script>
+        // Função de pesquisa para filtrar jogos por nome
+        function searchGames() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const gameContainer = document.getElementById('gameContainer');
+            const gameBoxes = gameContainer.getElementsByClassName('game-box');
+
+            Array.from(gameBoxes).forEach(gameBox => {
+                const title = gameBox.getAttribute('data-title').toLowerCase();
+                if (title.includes(input)) {
+                    gameBox.style.display = ''; // Exibe o jogo
+                } else {
+                    gameBox.style.display = 'none'; // Esconde o jogo
+                }
+            });
+        }
+    </script>
+</body>
+</html>

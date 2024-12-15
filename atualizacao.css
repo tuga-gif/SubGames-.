@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1a1a1a; /* fundo escuro para dar mais contraste */
+    color: #fff;
+    margin-top: 80px; /* Espaço extra para o header fixo */
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada na logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 3rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Seção de Atualizações */
+.update-section {
+    padding: 5rem 3rem;
+    background: #222222;
+    text-align: center;
+}
+
+.update-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.update-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.update {
+    background: #444;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.update p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.update span {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.update:hover {
+    transform: scale(1.05); /* leve efeito de zoom */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* sombra mais forte no hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #bbb;
+    font-size: 1rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Header: Reposiciona os itens para coluna */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* Seção de atualizações: Ajusta a largura */
+    .update-container {
+        padding: 1rem;
+    }
+
+    .update {
+        max-width: 100%;
+    }
+
+    /* Texto de título na seção de atualizações */
+    .update-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Ajusta o rodapé para maior legibilidade */
+    footer {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+    }
+
+    /* Ajustes no campo de entrada e botão */
+    #user-input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste extra para telas muito pequenas */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header .logo img {
+        width: 120px;
+    }
+
+    .update-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .update h3 {
+        font-size: 1.5rem;
+    }
+
+    .update p {
+        font-size: 0.9rem;
+    }
+}
